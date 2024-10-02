@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Importing the font */
+
+.home-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 15px;
+	/* Increased padding to make the container larger */
+	background-color: #2e2e2e;
+	/* Dark gray background */
+	border-radius: 8px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+	/* More noticeable shadow */
+	max-width: 600px;
+	margin: 11px auto 16px auto;
+	/* Added top margin to lift the container up by 5mm */
+	font-family: 'Montserrat', sans-serif;
+	/* Applying the font */
+	color: #f3f4f6;
+	/* Light text color */
+}
+
+.logo-container {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+	/* Reduced gap between logos */
+	margin-bottom: 10px;
+	/* Added margin to separate logos from the title */
+}
+
+.logo {
+	height: 40px;
+}
+
+h1 {
+	color: #e1e1e1;
+	/* Light title text color */
+	margin: 15px 0;
+	/* Reduced margin */
+}
+
+.counter-container {
+	margin: 15px 0;
+	/* Reduced margin */
+}
+
+.counter-button {
+	background-color: #9b59b6;
+	/* Purple button color */
+	color: white;
+	border: none;
+	border-radius: 4px;
+	padding: 10px 20px;
+	/* Increased padding for button */
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.counter-button:hover {
+	background-color: #8e44ad;
+	/* Darker on hover */
+}
+
+.counter-instruction,
+.read-the-docs {
+	color: #9b59b6;
+	/* Purple text color */
+}
+
+.read-the-docs {
+	background: linear-gradient(90deg, #9b59b6, #3498db);
+	/* Gradient from purple to blue */
+	-webkit-background-clip: text;
+	/* Vendor prefix for compatibility */
+	background-clip: text;
+	/* Standard property */
+	-webkit-text-fill-color: transparent;
+	/* Apply text color to gradient */
+	margin-top: 10px;
+	font-size: 16px;
+	/* Increased text size */
+}
