@@ -1,6 +1,6 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
-import Home from './pages/Home' // Импортируем главную страницу
-import About from './pages/About' // Импортируем страницу About
+import { Link, Route, BrowserRouter as Router, Routes } from 'react-router-dom'
+import About from '../pages/About' // Импортируем страницу About
+import Home from '../pages/Home' // Импортируем главную страницу
 import './App.css' // Оставляем стили
 
 function App() {

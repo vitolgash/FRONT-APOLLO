@@ -1,0 +1,13 @@
+import React from 'react';
+import MySvg from '../assets/mySvg.svg';
+
+const MyComponent = () => {
+return (
+<div>
+	<h1>Hello World</h1>
+	<img src={MySvg} alt="My SVG" />
+</div>
+);
+};
+
+export default MyComponent;
