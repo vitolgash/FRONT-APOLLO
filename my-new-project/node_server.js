@@ -1,0 +1,23 @@
+const express = require('express')
+const path = require('path')
+
+const app = express()
+const hostname = '127.0.0.1'
+const port = 3000
+
+app.use(express.static(path.join(__dirname, 'public')))
+
+// Обработка GET-запросов к корню сайта
+app.get('/', (req, res) => {
+	res.sendFile(path.join(__dirname, 'public', 'index.html'))
+})
+
+// Заменяем %PUBLIC_URL% на корректные пути
+app.use((req, res, next) => {
+	req.url = req.url.replace('%PUBLIC_URL%/', '')
+	next()
+})
+
+app.listen(port, hostname, () => {
+	console.log(`Server running at http://${hostname}:${port}/`)
+})
